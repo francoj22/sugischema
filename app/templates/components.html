@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+
+{% block title %}Components{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h1 class="card-title">Custom Components</h1>
+                <button class="btn btn-primary">Add Component</button>
+            </div>
+            <div class="card-body">
+                <p class="lead">This page displays all available custom components in your application.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Component Card 1 -->
+    <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+            <div class="card-header">
+                <h5 class="card-title">Data Table</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">A responsive data table component with sorting and pagination.</p>
+                <div class="d-flex justify-content-between mt-3">
+                    <span class="badge bg-primary">UI Component</span>
+                    <button class="btn btn-sm btn-outline-primary">View Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Component Card 2 -->
+    <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+            <div class="card-header">
+                <h5 class="card-title">Chart Widget</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Interactive charting component with multiple visualization options.</p>
+                <div class="d-flex justify-content-between mt-3">
+                    <span class="badge bg-success">Visualization</span>
+                    <button class="btn btn-sm btn-outline-primary">View Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Component Card 3 -->
+    <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+            <div class="card-header">
+                <h5 class="card-title">Form Builder</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Dynamic form generation component with validation and submission handling.</p>
+                <div class="d-flex justify-content-between mt-3">
+                    <span class="badge bg-info">Input</span>
+                    <button class="btn btn-sm btn-outline-primary">View Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Component Card 4 -->
+    <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+            <div class="card-header">
+                <h5 class="card-title">Alert System</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Customizable notification and alert component for user feedback.</p>
+                <div class="d-flex justify-content-between mt-3">
+                    <span class="badge bg-warning text-dark">Notification</span>
+                    <button class="btn btn-sm btn-outline-primary">View Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Component Card 5 -->
+    <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+            <div class="card-header">
+                <h5 class="card-title">File Uploader</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Drag-and-drop file upload component with progress tracking.</p>
+                <div class="d-flex justify-content-between mt-3">
+                    <span class="badge bg-secondary">Utility</span>
+                    <button class="btn btn-sm btn-outline-primary">View Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Component Card 6 -->
+    <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+            <div class="card-header">
+                <h5 class="card-title">Calendar</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Interactive calendar component with event management capabilities.</p>
+                <div class="d-flex justify-content-between mt-3">
+                    <span class="badge bg-danger">Time</span>
+                    <button class="btn btn-sm btn-outline-primary">View Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

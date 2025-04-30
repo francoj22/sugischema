@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h1 class="card-title">Hi!, I'm Franco Gutierrez</h2>
+                <p> Software Engineer with Strong focus on UI</p>
+                
+            </div>
+            <div class="card-body">
+                <p class="lead">This is the main page of your application with a responsive sidebar navigation.</p>
+                <hr>
+                <p>The sidebar provides easy navigation to different sections of your application.</p>
+                <p>On mobile devices, the sidebar can be toggled using the button at the top left.</p>
+               
+                <!-- Page Content -->
+                <div id="content">
+                    <div class="container-fluid">
+                        {% block fromcontent %}{% endblock %}
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">Recent Activity</h5>
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Updated profile information</li>
+                    <li class="list-group-item">Added new component</li>
+                    <li class="list-group-item">Changed dashboard settings</li>
+                    <li class="list-group-item">Logged in from new device</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">Quick Stats</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-6 text-center">
+                        <h3>42</h3>
+                        <p class="text-muted">Components</p>
+                    </div>
+                    <div class="col-6 text-center">
+                        <h3>128</h3>
+                        <p class="text-muted">Actions</p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-6 text-center">
+                        <h3>7</h3>
+                        <p class="text-muted">Projects</p>
+                    </div>
+                    <div class="col-6 text-center">
+                        <h3>24</h3>
+                        <p class="text-muted">Notifications</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
