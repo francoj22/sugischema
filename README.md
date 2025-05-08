@@ -2,6 +2,17 @@
 
 CRUD application running with flask
 UI design with streamlit
+
+## Project Structure
+```
+sugischema/
+├── app/                   # Main Directory 
+  ├── schemas/             # Directory to validate the schemas
+  ├── static/              # Directory to handle html pages
+  ├── app_routes.py        # API routes 
+├── requirements.txt     # Dependencies
+```
+
 ## Setup
 
 1. Install the required dependencies:
