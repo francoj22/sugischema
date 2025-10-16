@@ -147,16 +147,16 @@ export FLASK_DEBUG=1
 
 
 ### Rebuild and run
-docker build -t sugischema-app . && docker run -p 3000:3000 sugischema-app
+```docker build -t sugischema-app . && docker run -p 3000:3000 sugischema-app```
 
 ### Check if the container is running
-docker ps
+```docker ps```
 
 ### Check container logs
-docker logs <container_id>
+```docker logs <container_id>```
 
 ### Test from inside the container
-docker exec -it <container_id> curl http://localhost:3000
+```docker exec -it <container_id> curl http://localhost:3000```
 
 
 ## Contributing
