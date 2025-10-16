@@ -1,7 +1,6 @@
 from flask import Flask
 from flask_cors import CORS
 
-
 app = Flask(__name__)
 CORS(app, support_credentials=True)
 @app.context_processor
@@ -14,3 +13,4 @@ def inject_social_links():
     }
     return dict(social_links=social_links)
 from app import app_routes
+
