@@ -159,3 +159,19 @@ export FLASK_DEBUG=1
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+
+# Running With Docker
+
+
+# Rebuild and run
+docker build -t sugischema-app . && docker run -p 3000:3000 sugischema-app
+
+# Check if the container is running
+docker ps
+
+# Check container logs
+docker logs <container_id>
+
+# Test from inside the container
+docker exec -it <container_id> curl http://localhost:3000
